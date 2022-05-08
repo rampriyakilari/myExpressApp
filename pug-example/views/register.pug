@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    Head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Register
+        style
+            include style.css
+    body
+        div(class='container')
+            //include ./index.pug
+            h1 Registration form
+            ul(id="errors")
+            Br
+            form(action="/Register" method="post" align="center")
+                label(for="username") username
+                input(type="text" name="username")
+                Br
+                Br
+                label(for="password") password
+                input(type="password" name="password")
+                Br
+                label(for="cpassword") Confirm password
+                input(type="password" name="cpassword")
+                Br
+                Br
+                label(for="age") user age
+                input(type="text" name="age")
+                Br
+                Br
+                label(for="mobile") user mobile
+                input(type="text" name="mobile")
+                Br
+                Br
+                label(for="email") user email
+                input(type="text" name="email")
+                Br
+                Br
+                input(type="submit" name="Register" value="Register")
